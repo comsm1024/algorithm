@@ -1,4 +1,6 @@
-
+/**
+ * @param {number[]} w
+ */
 var Solution = function(w) {
     pre = new Array(w.length).fill(0);
     pre[0] = w[0];
@@ -8,6 +10,9 @@ var Solution = function(w) {
     this.total = _.sum(w);
 };
 
+/**
+ * @return {number}
+ */
 Solution.prototype.pickIndex = function() {
     const x = Math.floor((Math.random() * this.total)) + 1;
     const binarySearch = (x) => {
