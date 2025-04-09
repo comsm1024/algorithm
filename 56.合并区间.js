@@ -1,11 +1,15 @@
-// LCR 074 合并区间
+/*
+ * @lc app=leetcode.cn id=56 lang=javascript
+ *
+ * [56] 合并区间
+ */
 
+// @lc code=start
 /**
- * 
- * @param {number[][]} intervals 
+ * @param {number[][]} intervals
  * @return {number[][]}
  */
-let merge1 = function (intervals) {
+var merge = function(intervals) {
     const LEN = intervals.length
     if (LEN < 2) {
         return intervals
@@ -26,4 +30,5 @@ let merge1 = function (intervals) {
         i = j
     }
     return res
-}
+};
+// @lc code=end
